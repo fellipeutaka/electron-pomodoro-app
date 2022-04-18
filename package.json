@@ -1,9 +1,11 @@
 {
-  "name": "electron-react-typescript",
-  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
-  "version": "2.0.0",
-  "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
+  "name": "electron-pomodoro-app",
+  "author": "Fellipe Utaka",
+  "version": "1.0.0",
+  "description": "An Electron Pomodoro App using React.",
   "main": "./.webpack/main/index.js",
+  "keywords": [],
+  "license": "MIT",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -12,12 +14,12 @@
     "lint": "eslint . --ext js,ts",
     "test": "jest"
   },
-  "keywords": [],
-  "license": "MIT",
   "dependencies": {
     "react": "17.0.2",
+    "react-circular-progressbar": "^2.0.4",
     "react-dom": "17.0.2",
     "react-hot-loader": "4.13.0",
+    "react-icons": "^4.3.1",
     "styled-components": "5.3.0"
   },
   "devDependencies": {
@@ -35,6 +37,7 @@
     "@marshallofsound/webpack-asset-relocator-loader": "0.5.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "11.2.7",
+    "@testing-library/user-event": "^14.1.1",
     "@types/electron-devtools-installer": "2.2.0",
     "@types/jest": "26.0.23",
     "@types/react": "17.0.11",

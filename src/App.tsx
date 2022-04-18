@@ -1,12 +1,12 @@
-import { GlobalStyle } from './styles/GlobalStyle'
+import { GlobalStyle } from "./styles/GlobalStyle"
 
-import { Greetings } from './components/Greetings'
+import Timer from "./components/Timer"
 
 export function App() {
   return (
     <>
       <GlobalStyle />
-      <Greetings />
+      <Timer />
     </>
   )
 }

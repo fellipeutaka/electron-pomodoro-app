@@ -1,28 +1,26 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Container = styled.button`
-  height: 42px;
-  padding: 0 24px;
-  
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #8257e6;
-  border-radius: 8px;
-  border: 0;
+  border: 2px solid #f54477;
+  box-shadow: 5px 2px 15px 0px rgba(245, 68, 119, 0.35);
+  background: none;
 
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
 
   cursor: pointer;
+  transition: filter 0.3s ease;
 
   &:hover {
-    filter: brightness(0.9);
-  }
-
-  &:active {
     filter: brightness(0.7);
   }
 `
