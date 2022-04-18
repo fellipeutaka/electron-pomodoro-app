@@ -32,7 +32,10 @@ export default function Timer({
 
   const minutes = useMemo(() => Math.floor(count / 60), [count])
   const seconds = useMemo(() => count % 60, [count])
-  const progress = useMemo(() => count / 15, [count])
+  const progress = useMemo(
+    () => (count * 100) / INITIAL_TIME_IN_SECONDS,
+    [count]
+  )
   const activeIcon = useMemo(
     () => (active ? <BsPause size={32} /> : <BsPlay size={32} />),
     [active]
